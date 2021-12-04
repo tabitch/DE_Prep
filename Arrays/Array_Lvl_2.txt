@@ -1,0 +1,20 @@
+
+1.
+there are N houses with each house having A[i] gold in it. If a robber robs a house he cannot rob the house next to it. Find max amount robber can rob.
+
+2.
+Same questions. except now the houses are in a circular manner.
+
+3.
+Stock buy sell (if 2 transactions allowed)
+
+4.
+Triplet with given sum
+
+5.
+No of triangles that can be formed using any 3 elements of array as sides of triangle.
+(Use 4)
+
+6.
+There are N meetings to be held. You have 2 arrays (start[i] and end[i] denoting starting and ending time of ith meeting).
+You want to reuse meeting rooms as much as possible. What is the minimum no of rooms you will need to accomodate all meetings.

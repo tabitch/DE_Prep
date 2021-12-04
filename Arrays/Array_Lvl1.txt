@@ -1,0 +1,35 @@
+
+1.
+Sort the array of 0s, 1s, and 2s
+https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
+
+2.
+Max profit after buying selling stock. One transaction allowed (you can buy once then sell once).
+https://practice.geeksforgeeks.org/problems/maximum-difference/0
+
+3.
+Max profit after buying selling stock. Any number of transactions allowed
+https://practice.geeksforgeeks.org/problems/stock-buy-and-sell/0
+
+
+(4 to 6 are related and each has 2-3 solutions)
+
+4.
+Find Missing number from list of N-1 numbers whose value range from 1 to N
+https://practice.geeksforgeeks.org/problems/missing-number-in-array/0
+
+5.
+In array of elements with values from 1 to N, some values are repeating twice. Find those values.
+
+
+6.
+In array of elements with values from 1 to N, some values are repeating (any no of times). Find those values.
+
+7.
+Find pair in array with sum = X (or pair with sum closest to given X)
+https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1
+
+8.
+Largest Sum Contiguous Subarray
+https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1
+

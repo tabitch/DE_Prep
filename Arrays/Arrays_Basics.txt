@@ -1,0 +1,24 @@
+
+1.
+Find the 3rd minimum and 2nd maximum element in an array
+
+2.
+Reverse the array
+
+3.
+Subarray with given sum (array has only +ve numbers)
+
+4.
+Rotate Array
+
+5.
+Remove duplicates from sorted array
+
+6.
+In a sorted and rotated array find kth element
+
+7.
+Given two sorted arrays, merge into third array
+
+8.
+Matrix spiral traversal
