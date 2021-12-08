@@ -9,13 +9,30 @@ return a[3],a[-2]
 
 TC- O(nlogn)
 
+Comments :
+Solution works when Kth maximum or minimum is need, where K can change. 
+But if you have a fixed number you want, which is relatively small, like 3rd minimum in this case, there is a faster way for this.
+Try to think of O(n) solution.
+
 2.
 Reverse the array
 arr=arr[::-1]
 
+Comments :
+Good that you know Python shortcuts. Try to find out how this works internally nd how much time it takes.
+Also, think of another solution, one which is language independant, i.e you can use the logic in other languages too.
+It's good to know Python shorthands but you should also know alternatives.
+
 
 3.
 Subarray with given sum (array has only +ve numbers)
+Question Explained : 
+1 2 3 4 5 6 7 8 array is given. Given sum = 12
+1 2 [3 4 5] 6 7 8 
+[3 4 5] subarray of the given array has sum 12.
+
+If sum was 15 ans would be [1 2 3 4 5]
+
 
 4.
 Rotate Array
@@ -28,6 +45,12 @@ a.append(arr[0])
 return a
 
 TC-O(N)	
+
+Comments : 
+Solution works, TC is correct but Space Complexity is O(n) because you are creating a new array of N size.
+Can you do this in-place (making changes in the given array itself, O(1) space). Make rorate the array by K places.
+
+
 
 5.
 Remove duplicates from sorted array
@@ -42,11 +65,29 @@ return a
 
 TC-O(n)
 
+Comments :
+Solution works.
+If I modify the question a bit.
+Sorted Array is given. It's length is given as a variable. You have to remove all duplicates and return the modified array and new length.
+Space Complexity should be O(1), i.e, you cant use new array, you have to make modifications in-place in the given array
+(Array will be traversed till length variable, so array size can be greater than length)
+
+
+
 6.
-In a sorted and rotated array find kth element
+In a sorted and rotated array find index of kth minimum element
+Explanation:
+1 2 3 4 5 6 7 8 9 - array
+7 8 9 1 2 3 4 5 6 - rotated array
+K = 3
+Answer is 5 as 3rd minimum number is 3 which is present at 5th index in rotated array
+
+
+
 
 7.
 Given two sorted arrays, merge into third array
+
 
 n=int(input())
 m=int(input())
@@ -60,6 +101,19 @@ for i,j in zip(a,b):
 return c
 
 TC-O(n)
+
+Comments :
+
+Doesn't work. Maybe the question wasn't clear.
+I expect the final array to be a sorted collection of elements from Array1 and Array 2.
+
+Example : 
+Array 1 : 4 7 9 11 15
+Array 2 : 2 3 4 10 
+
+Merged Array : 2 3 4 4 7 9 10 11 15
+
+
 
 8.
 Matrix spiral traversal
