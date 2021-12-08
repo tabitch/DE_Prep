@@ -14,6 +14,8 @@ Solution works when Kth maximum or minimum is need, where K can change.
 But if you have a fixed number you want, which is relatively small, like 3rd minimum in this case, there is a faster way for this.
 Try to think of O(n) solution.
 
+
+
 2.
 Reverse the array
 arr=arr[::-1]
@@ -24,6 +26,8 @@ Also, think of another solution, one which is language independant, i.e you can 
 It's good to know Python shorthands but you should also know alternatives.
 
 
+
+
 3.
 Subarray with given sum (array has only +ve numbers)
 Question Explained : 
@@ -32,6 +36,8 @@ Question Explained :
 [3 4 5] subarray of the given array has sum 12.
 
 If sum was 15 ans would be [1 2 3 4 5]
+First think of a Brute Force approach, then try to optimize it.
+
 
 
 4.
@@ -49,6 +55,7 @@ TC-O(N)
 Comments : 
 Solution works, TC is correct but Space Complexity is O(n) because you are creating a new array of N size.
 Can you do this in-place (making changes in the given array itself, O(1) space). Make rorate the array by K places.
+
 
 
 
@@ -74,6 +81,8 @@ Space Complexity should be O(1), i.e, you cant use new array, you have to make m
 
 
 
+
+
 6.
 In a sorted and rotated array find index of kth minimum element
 Explanation:
@@ -81,6 +90,7 @@ Explanation:
 7 8 9 1 2 3 4 5 6 - rotated array
 K = 3
 Answer is 5 as 3rd minimum number is 3 which is present at 5th index in rotated array
+
 
 
 
@@ -115,5 +125,16 @@ Merged Array : 2 3 4 4 7 9 10 11 15
 
 
 
+
+
 8.
 Matrix spiral traversal
+
+Explained : 
+Given Matrix :
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15 16
+
+Expected Output : 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
