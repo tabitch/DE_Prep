@@ -54,7 +54,7 @@ TC-O(N)
 
 Comments : 
 Solution works, TC is correct but Space Complexity is O(n) because you are creating a new array of N size.
-Can you do this in-place (making changes in the given array itself, O(1) space). Make rorate the array by K places.
+Can you do this in-place (making changes in the given array itself, O(1) space). Also, rorate the array by K places.
 
 
 
