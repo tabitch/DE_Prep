@@ -7,10 +7,12 @@ a=list(map(int,input().strip().split()))[:n]
 a.sort()
 return a[3],a[-2]
 
+TC- O(nlogn)
 
 2.
 Reverse the array
 arr=arr[::-1]
+
 
 3.
 Subarray with given sum (array has only +ve numbers)
@@ -23,7 +25,9 @@ for i in range(1,len(arr)):
 	a.append(arr[i])
 	
 a.append(arr[0])
-return a	
+return a
+
+TC-O(N)	
 
 5.
 Remove duplicates from sorted array
@@ -35,6 +39,8 @@ for i in arr:
 	else:
 		a.append(i)
 return a
+
+TC-O(n)
 
 6.
 In a sorted and rotated array find kth element
@@ -53,6 +59,7 @@ for i,j in zip(a,b):
 
 return c
 
+TC-O(n)
 
 8.
 Matrix spiral traversal
