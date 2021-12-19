@@ -1,4 +1,5 @@
-
+2,6,4,8,9,26,76,23,5
+1+
 1.
 Find the 3rd minimum and 2nd maximum element in an array
 
@@ -14,6 +15,35 @@ Solution works when Kth maximum or minimum is need, where K can change.
 But if you have a fixed number you want, which is relatively small, like 3rd minimum in this case, there is a faster way for this.
 Try to think of O(n) solution.
 
+New soln:
+
+n=int(input())
+arr=list(map(int,input().strip().split()))[:n]
+min1,min2,min3=1000000
+max1,max2=0
+for i in arr:
+	if i<min1:
+		min2=min1
+		min3=min2
+		min1=i
+	if i>min1 and i<min2:
+		min3=min2
+		min2=i
+	if i>min1 and i>min2 and i<min3:
+		min3=i
+	if i>max1:
+		max2=max1
+		max1=i
+	if i<max1 and i>max2:
+		max2=i
+		
+return min3,max2
+
+
+		
+		
+
+
 
 
 2.
@@ -26,8 +56,21 @@ Also, think of another solution, one which is language independant, i.e you can 
 It's good to know Python shorthands but you should also know alternatives.
 
 
-
-
+a=[]
+for i in range(len(arr),-1,-1):
+	a.append(arr[i])
+	
+	
+	
+t=0
+l=len(a)
+for i in range(l/2):
+	t=a[i]
+	a[i]=a[(l-1)-i]
+	a[(l-1)-i]=t
+	
+	
+	
 3.
 Subarray with given sum (array has only +ve numbers)
 Question Explained : 
@@ -37,6 +80,32 @@ Question Explained :
 
 If sum was 15 ans would be [1 2 3 4 5]
 First think of a Brute Force approach, then try to optimize it.
+
+
+#brute_force
+for i in range(len(a)):
+	s=0
+	for j in range(i,len(a)):
+		s=s+a[j]
+		if s==k:
+			return a[i:j]
+		else:
+			continue
+
+
+sum=0
+s=0
+e=-1
+while sum!=k  or s>e or e>(len(a)-1):
+	if sum==k:
+		return a[s:e+1]
+	if sum>k:
+		sum=sum-a[s]
+		s=s+1
+	if sum<k:
+		e=e+1
+		sum+sum+a[e]
+		
 
 
 
@@ -55,6 +124,59 @@ TC-O(N)
 Comments : 
 Solution works, TC is correct but Space Complexity is O(n) because you are creating a new array of N size.
 Can you do this in-place (making changes in the given array itself, O(1) space). Also, rorate the array by K places.
+
+
+def rotate_by_k():
+	for i in range(k):
+		rotate(a)
+
+def rotate(a):
+	t=a[0]
+	for i in range(len(a)):
+		a[i]=a[i+1]
+
+	a[-1]=t
+	
+	
+	
+	
+##############
+k=int(input())
+t1=0
+for i in range(k/2):
+	t=a[i]
+	a[i]=a[(k-1)-i]
+	a[(k-1)-i]=t
+	
+t2=0
+for i in range(k,(n-k)):
+	t=a[i]
+	a[i]=a[(n-k-1)-i]
+	a[(n-k-1)-i]=t
+	
+t=0
+l=len(a)
+for i in range(l/2):
+	t=a[i]
+	a[i]=a[(l-1)-i]
+	a[(l-1)-i]=t
+	
+
+####Taylor question######
+z=int(input())
+x,m,n=0
+y=len(a)-1
+min=10000000
+while x!=y:
+	if (a[x]+a[y])<z:
+		if (z-(a[x]+a[y]))<min:
+			min=(z-(a[x]+a[y]))
+			m,n=x,y
+		x=x+1
+	if (a[x]+a[y])>z:
+		y=y-1
+		
+return a[m],b[n]
 
 
 
@@ -80,6 +202,21 @@ Space Complexity should be O(1), i.e, you cant use new array, you have to make m
 (Array will be traversed till length variable, so array size can be greater than length)
 
 
+##################
+
+x,y=0
+while y!=len(a):
+	if y=0:
+		y=y+1
+		x=x+1
+	if a[y]==a[y-1]:
+		y=y+1
+	else:
+		a[x]=a[y]
+		x=x+1
+		y=y+1
+
+return a[:x]
 
 
 
@@ -92,7 +229,14 @@ K = 3
 Answer is 5 as 3rd minimum number is 3 which is present at 5th index in rotated array
 
 
-
+c=0
+for i in range(len(a)):
+	if a[i]<a[i+1]:
+		c=c+1
+	else:
+		break
+		
+return a[K+c]
 
 
 7.
@@ -125,6 +269,27 @@ Merged Array : 2 3 4 4 7 9 10 11 15
 
 
 
+i,j=0
+c=[]
+while i!=len(a) or j!=len(b):
+	if a[i]>b[j]:
+		c.append(b[j])
+		j=j+1
+	if a[i]==b[j]:
+		c.append(a[i])
+		c.append(b[j])
+		i=i+1
+		j=j+1
+	if a[i]<b[j]:
+		c.append(a[i])
+		i=i+1
+	
+if i<(len(a)):
+	c.append(a[i:len(a)-1]
+elif j<(len(b)):
+	c.append(b[j:len(b)-1]
+	
+return c
 
 
 8.
@@ -138,3 +303,13 @@ Given Matrix :
 13 14 15 16
 
 Expected Output : 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+
+
+a,b,c,d=0
+for i in range(r):
+
+for j in range(1,r):
+
+for k in reversed(range(r-1)):
+
+for l in reversed(range(r-1),1):
