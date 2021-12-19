@@ -1,0 +1,122 @@
+
+
+2nd.
+
+Hint :
+You want to find the smallest element on the left of each element.
+
+
+Ans :
+https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+
+
+
+
+
+3rd.
+
+Hint :
+Buy low, sell high (repeat if possible)
+
+
+
+Answer :
+https://www.geeksforgeeks.org/stock-buy-sell/
+
+
+
+
+
+4.
+
+
+Hint for solution 1 :
+Sum of n natural numbers : n*(n+1)/2
+
+
+Hint for solution 2 :
+A ^ A = 1 (^ means XOR)
+
+
+Hint for solution 3 :
+What if you could mark if a number is present in the array itself.
+
+
+Hint #2 for solution 3 :
+Numbers range from 1 to N, indexes range from 1 to N-1. Could you use indexes as identifiers for the number?
+
+
+(Tricky, can be skipped) Hint for solution 4 :
+what if you rearrange the array so that ith index has i value
+
+
+Answer :
+https://www.geeksforgeeks.org/find-the-missing-number/
+
+
+
+
+
+
+
+5. 
+
+Hint 1 :
+What if you could mark if a number is present in the array itself.
+
+
+Hint 2 :
+Numbers range from 1 to N, indexes range from 1 to N-1. Could you use indexes as identifiers for the number?
+
+
+Answer : 
+https://www.geeksforgeeks.org/find-the-two-repeating-elements-in-a-given-array/
+
+
+
+
+
+
+
+6.
+
+Hint 1 :
+What if you could mark if a number is present in the array itself.
+
+
+Hint 2 :
+Numbers range from 1 to N, indexes range from 1 to N-1. Could you use indexes as identifiers for the number?
+
+
+Answer : 
+https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/
+
+
+
+
+
+
+
+7.
+
+Hint :
+have we done this question before
+
+
+
+
+
+
+8th
+
+Hint : 
+Two pointers (start and end)
+When does end move? When does start move?
+
+
+
+
+
+
+Answer : 
+https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
